@@ -1,0 +1,19 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+    "name": "cmpe230_spring25",
+    "context": "..",
+    "dockerFile": "../containers/spring25/Dockerfile",
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": []
+      }
+    },
+    "containerEnv": {
+        "DISPLAY": "unix:0"
+    },
+    "mounts": [
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached"
+    ],
+    "remoteUser": "bouncmpe230"
+  }
