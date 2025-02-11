@@ -7,8 +7,8 @@ Below are the recommended ways to set up your development environment, in order 
 
 ## 1. Native Installation / Dual Boot / WSL
 - **Native Installation**: You can install Linux (e.g., Ubuntu) directly on your computer. This provides the most integrated experience, but it requires partitioning your hard drive.
-- **Dual Boot**: If you’re already on Windows, you can have both Windows and Linux on your machine, choosing which to run at startup.
-- **Windows Subsystem for Linux (WSL)**: If you are a Windows 10 or 11 user, installing WSL is a convenient option. It’s effectively a Linux environment running within Windows, allowing you to use Linux commands without leaving Windows.
+- **Dual Boot**: If you're already on Windows, you can have both Windows and Linux on your machine, choosing which to run at startup.
+- **Windows Subsystem for Linux (WSL)**: If you are a Windows 10 or 11 user, installing WSL is a convenient option. It's effectively a Linux environment running within Windows, allowing you to use Linux commands without leaving Windows.
 
 **Pros**: Full access to hardware, consistent performance, no virtualization overhead.  
 
@@ -19,7 +19,7 @@ Below are the recommended ways to set up your development environment, in order 
 ## 2. Docker (Containerization)
 For those who **cannot or prefer not** to install Linux natively (or WSL), **Docker** is the next best option. We will also use Docker containers to **grade some of your projects** automatically, so having Docker set up is especially convenient.  
 
-> **Note**: If you’re on **macOS** or **Windows**, Docker Desktop is available. On **Linux**, you can install Docker Engine directly.
+> **Note**: If you're on **macOS** or **Windows**, Docker Desktop is available. On **Linux**, you can install Docker Engine directly.
 
 ### 2.1 Installing Docker
 1. Visit the official [Docker Engine installation page](https://docs.docker.com/engine/install/).
@@ -48,7 +48,9 @@ Now you should see a Linux shell prompt inside the container. You can practice y
 ### 2.4 Using VSCode with Docker
 If you use Visual Studio Code, there is a helpful extension called Remote - Containers:
 1. Install [Remote - Containers](https://code.visualstudio.com/docs/devcontainers/containers) from the VSCode Extension Marketplace.
-2. You can open a folder inside the Docker container directly. This way, you get all the VSCode features, just as if you were coding on a local machine. 
+2. You can open a folder inside the Docker container directly. This way, you get all the VSCode features, just as if you were coding on a local machine. 
+
+> **Note**: If you encounter any problems or would like to build your own Docker image, see `containers/README.md` for detailed instructions.
 
 
    
